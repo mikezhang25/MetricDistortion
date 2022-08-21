@@ -1,0 +1,94 @@
+Optimize a model with 25 rows, 52 columns and 48 nonzeros
+Model fingerprint: 0x7b3685bd
+Model has 264 quadratic objective terms
+Model has 4 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+00]
+  QRHS range       [1e+00, 1e+00]
+Presolve removed 24 rows and 0 columns
+Optimize failed due to non-convexity
+Set parameter NonConvex to value 2
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (mac64[arm])
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+Optimize a model with 25 rows, 52 columns and 48 nonzeros
+Model fingerprint: 0x7b3685bd
+Model has 264 quadratic objective terms
+Model has 4 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+00]
+  QRHS range       [1e+00, 1e+00]
+Presolve removed 24 rows and 0 columns
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve removed 24 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 774 rows, 438 columns, 2233 nonzeros
+Presolved model has 384 bilinear constraint(s)
+Variable types: 438 continuous, 0 integer (0 binary)
+
+Root relaxation: unbounded, 552 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  postponed    0               -          -      -     -    0s
+     0     0  postponed    0               -          -      -     -    0s
+H    0     0                       1.9055356          -      -     -    0s
+     0     2  postponed    0         1.90554          -      -     -    0s
+ 26598  7613     cutoff  892         1.90554          -      -   4.7    5s
+ 59758 11696  postponed  179         1.90554          -      -   2.4   10s
+ 73565 22860  postponed  533         1.90554          -      -   3.4   15s
+H74656 22860                       1.9055330          -      -   3.3   15s
+ 92146 36618  postponed 1739         1.90553          -      -   3.4   20s
+ 114748 49070  postponed 1872         1.90553          -      -   3.2   25s
+ 133364 60141  postponed 2767         1.90553          -      -   2.9   30s
+ 155480 64665  postponed  901         1.90553          -      -   2.5   35s
+ 181012 79967 infeasible 2728         1.90553          -      -   2.5   40s
+ 206503 94437 infeasible 2190         1.90553          -      -   3.1   45s
+ 234063 99962  postponed 1209         1.90553          -      -   3.4   50s
+ 251324 103287  postponed 1853         1.90553          -      -   3.5   55s
+ 269216 104901  postponed 2705         1.90553          -      -   3.5   60s
+ 287891 105532  postponed 3611         1.90553          -      -   3.5   65s
+ 306762 106665  postponed 1228         1.90553          -      -   3.7   70s
+ 326666 109414  postponed 2151         1.90553          -      -   3.9   75s
+ 345868 111303  postponed 3212         1.90553          -      -   3.9   80s
+ 365423 112955  postponed 4309         1.90553          -      -   4.0   85s
+ 383183 113422  postponed 1496         1.90553          -      -   3.9   90s
+ 403018 115110  postponed  320         1.90553          -      -   3.9   95s
+ 418314 117308 infeasible  688         1.90553          -      -   3.9  100s
+ 438690 131611  postponed  294         1.90553          -      -   4.2  105s
+ 461159 148447  postponed  864         1.90553          -      -   4.2  110s
+ 482410 161126  postponed 1208         1.90553          -      -   4.2  115s
+ 506740 166615  postponed  647         1.90553          -      -   4.6  120s
+ 525387 179193  postponed 2217         1.90553          -      -   4.5  125s
+
+Explored 537626 nodes (2459648 simplex iterations) in 127.56 seconds (75.57 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 1: 1.90553
+
+Model is unbounded
+Best objective 1.905535606731e+00, best bound -, gap -
+
+    Variable            x
+-------------------------
+  a_({1}, 1)     0.355944
+  a_({2}, 2)     0.871956
+  a_({3}, 3)     0.910201
+  a_({4}, 4)     0.623932
+q_(2, 1, 4, 3)     0.296059
+q_(2, 4, 1, 3)      0.11069
+q_(3, 1, 4, 2)     0.340687
+q_(3, 4, 1, 2)     0.119307
+q_(4, 1, 2, 3)     0.133257

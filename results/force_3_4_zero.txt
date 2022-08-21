@@ -1,0 +1,63 @@
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (mac64[arm])
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+Optimize a model with 27 rows, 52 columns and 50 nonzeros
+Model fingerprint: 0xb0d7318c
+Model has 264 quadratic objective terms
+Model has 4 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+00]
+  QRHS range       [1e+00, 1e+00]
+Presolve removed 26 rows and 2 columns
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve removed 26 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 702 rows, 400 columns, 2005 nonzeros
+Presolved model has 348 bilinear constraint(s)
+Variable types: 400 continuous, 0 integer (0 binary)
+
+Root relaxation: unbounded, 541 iterations, 0.00 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  postponed    0               -          -      -     -    0s
+     0     0  postponed    0               -          -      -     -    0s
+Exploring 100 nodes in MinRel heuristic
+No solution found by MinRel heuristic
+     0     2  postponed    0               -          -      -     -    0s
+H16489  3103                       1.9494898          -      -   3.4    2s
+ 31221  6707  postponed  729         1.94949          -      -   3.8    5s
+ 65868 15088  postponed 2212         1.94949          -      -   2.1   10s
+ 89663 30634  postponed  297         1.94949          -      -   2.0   15s
+H93831 31517                       1.9494898          -      -   2.1   15s
+H95924 32171                       1.9494875          -      -   2.2   16s
+ 108583 44796  postponed  924         1.94949          -      -   2.5   20s
+ 128888 56800  postponed 1673         1.94949          -      -   3.6   25s
+ 150729 63936  postponed 1990         1.94949          -      -   3.7   30s
+
+Interrupt request received
+
+Explored 585406 nodes (1021872 simplex iterations) in 129.13 seconds (41.69 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 2: 1.94949 1.94949
+
+Solve interrupted
+Best objective 1.949489375619e+00, best bound -, gap -
+
+    Variable            x
+-------------------------
+  a_({1}, 1)      1.11237
+  a_({2}, 2)      1.11237
+a_({3, 4}, 3)     0.403093
+a_({3, 4}, 4)     0.403093
+q_(1, 4, 3, 2)     0.478776
+q_(2, 4, 3, 1)     0.420205
+q_(3, 4, 2, 1)     0.101019

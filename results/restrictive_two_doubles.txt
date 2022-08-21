@@ -1,0 +1,54 @@
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (mac64[arm])
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+Optimize a model with 49 rows, 52 columns and 72 nonzeros
+Model fingerprint: 0x4969e2ed
+Model has 264 quadratic objective terms
+Model has 4 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+00]
+  QRHS range       [1e+00, 1e+00]
+Presolve removed 48 rows and 24 columns
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve removed 48 rows and 24 columns
+Presolve time: 0.00s
+Presolved: 134 rows, 94 columns, 413 nonzeros
+Presolved model has 64 bilinear constraint(s)
+Variable types: 94 continuous, 0 integer (0 binary)
+
+Root relaxation: unbounded, 99 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  postponed    0               -          -      -     -    0s
+     0     0  postponed    0               -          -      -     -    0s
+H    0     0                       1.9311324          -      -     -    0s
+     0     2  postponed    0         1.93113          -      -     -    0s
+
+Explored 20797 nodes (21346 simplex iterations) in 0.77 seconds (0.35 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 1: 1.93113
+
+Model is unbounded
+Best objective 1.931132355305e+00, best bound -, gap -
+
+    Variable            x
+-------------------------
+a_({1, 2}, 1)      1.14012
+a_({2, 3}, 2)     0.201242
+  a_({3}, 3)     0.610798
+  a_({4}, 4)      1.23481
+q_(1, 3, 2, 4)     0.161371
+q_(2, 1, 3, 4)     0.348845
+q_(3, 2, 1, 4)   0.00203773
+q_(4, 3, 2, 1)     0.487746
+
+// only lets above sets have non-zero weights
